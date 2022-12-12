@@ -1,7 +1,8 @@
 package ru.mail.besfian.api.model.add_new_pet.response
 
-import io.kotest.matchers.nulls.shouldNotBeNull
-import java.util.Objects
+import com.google.gson.Gson
+import lombok.Data
+import ru.mail.besfian.api.model.add_new_pet.request.AddNewPetRequestData
 
 data class AddNewPetResponseData(
     var category: Category? = null,
